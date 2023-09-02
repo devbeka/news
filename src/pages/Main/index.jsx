@@ -14,7 +14,7 @@ const Main = () => {
   const [isLoading, setIsLoading] = useState(true)
   const [currentPage, setCurrentPage] = useState(1)
   const totalPages = 10
-  const pageSize = 10
+  const pageSize = 15
 
   const fetchNews = async (currentPage) => {
     try {
