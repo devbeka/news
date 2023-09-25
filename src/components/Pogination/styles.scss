@@ -4,13 +4,12 @@
   gap: 12px;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
 
   &__arrow {
     border: none;
     background-color: #fff;
     font-size: 18px;
-    cursor: pointer; 
+    cursor: pointer;
   }
   &__list {
     display: flex;
