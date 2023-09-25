@@ -1,0 +1,12 @@
+.latest {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .latest {
+    display: none;
+  }
+}
