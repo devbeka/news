@@ -1,11 +1,17 @@
 import { getCategories } from '../../api/apiNews'
 import { useFetch } from '../../helpers/hooks/useFetch'
+import {  IFilters } from '../../interfaces'
 import Categories from '../Categories'
 import Search from '../Search'
 import Slider from '../Slider'
 import './styles.scss'
 
-const NewsFilters = ({ filters, changeFilter }) => {
+interface Props {
+  filters: IFilters
+  changeFilter: (key: string, value: string | number | null) => void
+}
+
+const NewsFilters = ({ filters, changeFilter }: Props) => {
   const { data: dataCategories } = useFetch(getCategories)
   return (
     <header className="news-filters">

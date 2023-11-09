@@ -1,16 +1,17 @@
+import { IPaginationProps } from '../../interfaces'
 import './styles.scss'
 
 const Pogination = ({
   handleNextPage,
-  handlePreviosPage,
+  handlePreviousPage,
   handleClickPage,
   currentPage,
   totalPages,
-}) => {
+}: IPaginationProps) => {
   return (
     <div className="pogination">
       <button
-        onClick={handlePreviosPage}
+        onClick={handlePreviousPage}
         disabled={currentPage <= 1}
         className="pogination__arrow"
       >
@@ -36,7 +37,7 @@ const Pogination = ({
         className="pogination__arrow"
       >
         {'>'}
-      </button> 
+      </button>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import { useDebounce } from '../../helpers/hooks/useDebounce'
 import NewsFilters from '../NewsFilters'
 import NewsList from '../NewsList'
 import PoginationWrapper from '../PoginationWrapper'
+// import { NewsApiResponse, ParamsType } from '../../interfaces'
 import './styles.scss'
 
 const NewsByFilters = () => {
@@ -27,12 +28,12 @@ const NewsByFilters = () => {
       changeFilter('page_number', filters.page_number + 1)
     }
   }
-  const handlePreviosPage = () => {
+  const handlePreviousPage = () => {
     if (filters.page_number > 1) {
       changeFilter('page_number', filters.page_number - 1)
     }
   }
-  const handleClickPage = (pageNumber) => {
+  const handleClickPage = (pageNumber: number) => {
     changeFilter('page_number', pageNumber)
   }
 
@@ -44,7 +45,7 @@ const NewsByFilters = () => {
         top
         bottom
         handleNextPage={handleNextPage}
-        handlePreviosPage={handlePreviosPage}
+        handlePreviousPage={handlePreviousPage}
         handleClickPage={handleClickPage}
         currentPage={filters.page_number}
         totalPages={TOTAL_PAGES}
