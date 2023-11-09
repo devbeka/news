@@ -1,6 +1,10 @@
 import './styles.scss'
 
-const ImageBanner = ({ image }) => {
+interface Props {
+  image: string
+}
+
+const ImageBanner = ({ image }: Props) => {
   return (
     <div className="wrapper">
       {image ? (
