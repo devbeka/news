@@ -1,9 +1,12 @@
-# News
+# Breaking news
 
-### npm insatll
+## install packages
+## 1. npm install
 
-### npm run dev
+## start project
+## 2. npm run dev
 
-### npm run build
+## build project
+## 3. npm run build
 
-url: link
+### url: https://breaking-news-five.vercel.app/
