@@ -1,12 +1,13 @@
 # Breaking news
 
-## install packages
-## 1. npm install
+### 1. install packages
+npm install
 
-## start project
-## 2. npm run dev
+### 2, start project
+npm run dev
 
-## build project
-## 3. npm run build
+### 3. build project
+npm run build
 
-### url: https://breaking-news-five.vercel.app/
+#### url: https://breaking-news-five.vercel.app/
+ß
